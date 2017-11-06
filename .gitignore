@@ -1,3 +1,4 @@
 *.pyc
+*.egg-info
 .bash_history
 .viminfo
