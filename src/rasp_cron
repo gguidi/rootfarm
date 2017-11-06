@@ -1,0 +1,14 @@
+# crontab for the Docker container running on the raspberry pi
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# run the script to capture images every hour
+#0 * * * * /usr/bin/python root/data/src/capture_and_upload.py
+#
+# run every minute
+* * * * * /usr/bin/python ~/rootfarm/src/capture_and_upload.py >> ~/rootfarm/myscript.log 2>&1
+# empty line
